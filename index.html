@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopySales.blog - Boutique E-commerce Moderne</title>
+    <meta name="description" content="Découvrez ShopySales.blog - Votre destination e-commerce pour des produits de qualité. Design moderne, expérience optimisée et service client exceptionnel." />
+    <meta name="keywords" content="e-commerce, boutique en ligne, shopping, produits de qualité, ShopySales" />
+    <meta name="author" content="ShopySales" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shopysales.blog/" />
+    <meta property="og:title" content="ShopySales.blog - Boutique E-commerce Moderne" />
+    <meta property="og:description" content="Découvrez ShopySales.blog - Votre destination e-commerce pour des produits de qualité." />
+    <meta property="og:image" content="https://shopysales.blog/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shopysales.blog/" />
+    <meta property="twitter:title" content="ShopySales.blog - Boutique E-commerce Moderne" />
+    <meta property="twitter:description" content="Découvrez ShopySales.blog - Votre destination e-commerce pour des produits de qualité." />
+    <meta property="twitter:image" content="https://shopysales.blog/twitter-image.jpg" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "OnlineStore",
+      "name": "ShopySales",
+      "url": "https://shopysales.blog",
+      "description": "Boutique e-commerce moderne avec une sélection de produits de qualité",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://shopysales.blog/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID_HERE');
+      fbq('track', 'PageView');
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_TRACKING_ID');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
